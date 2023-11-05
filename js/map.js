@@ -36,80 +36,11 @@ map.addControl(L.control.zoom({
     position: 'topright'
 }));
 
-var apiKey = "AAPKedd440153dd74d8ea2efd2ca0fdfec07yaKzMsbHTnVYK45aWIL_bvHH7L2bzYlBw7b4TNX6nMuaiZ7BBPHd1idg33U1ZtLl";
-
-const vectorTiles = {};
-const allEnums = [
-  "arcgis/imagery",
-//   "arcgis/imagery/standard",
-//   "arcgis/imagery/labels",
-  "arcgis/light-gray",
-//   "arcgis/light-gray/base",
-//   "arcgis/light-gray/labels",
-//   "arcgis/dark-gray",
-//   "arcgis/dark-gray/base",
-//   "arcgis/dark-gray/labels",
-//   "arcgis/navigation",
-//   "arcgis/navigation-night",
-  "arcgis/streets"
-//   "arcgis/streets-night",
-//   "arcgis/streets-relief",
-//   "arcgis/streets-relief/base",
-//   "arcgis/outdoor",
-//   "arcgis/topographic",
-//   "arcgis/topographic/base",
-//   "arcgis/oceans",
-//   "arcgis/oceans/base",
-//   "arcgis/oceans/labels",
-//   "osm/standard",
-//   "osm/standard-relief",
-//   "osm/standard-relief/base",
-//   "osm/streets",
-//   "osm/streets-relief",
-//   "osm/streets-relief/base",
-//   "osm/light-gray",
-//   "osm/light-gray/base",
-//   "osm/light-gray/labels",
-//   "osm/dark-gray",
-//   "osm/dark-gray/base",
-//   "osm/dark-gray/labels",
-//   "arcgis/terrain",
-//   "arcgis/terrain/base",
-//   "arcgis/terrain/detail",
-//   "arcgis/community",
-//   "arcgis/charted-territory",
-//   "arcgis/charted-territory/base",
-//   "arcgis/colored-pencil",
-//   "arcgis/nova",
-//   "arcgis/modern-antique",
-//   "arcgis/modern-antique/base",
-//   "arcgis/midcentury",
-//   "arcgis/newspaper",
-//   "arcgis/hillshade/light",
-//   "arcgis/hillshade/dark"
-];
-
-    //   L.esri.Vector.vectorBasemapLayer(basemapEnum, {
-    //     apiKey: apiKey
-    //   }).addTo(map);
-
-
 // Add Esri Basemaps
-// var grayBaseMap = L.esri.basemapLayer('Gray');
-// var streetsBaseMap = L.esri.basemapLayer('Streets');
-// var imageryBaseMap = L.esri.basemapLayer('Imagery');
+var grayBaseMap = L.esri.basemapLayer('Gray');
+var streetsBaseMap = L.esri.basemapLayer('Streets');
+var imageryBaseMap = L.esri.basemapLayer('Imagery');
 
-var grayBaseMap = L.esri.Vector.vectorBasemapLayer("arcgis/light-gray", {
-    apiKey
-});
-
-var streetsBaseMap = L.esri.Vector.vectorBasemapLayer("arcgis/streets", {
-    apiKey
-});
-
-var imageryBaseMap = L.esri.Vector.vectorBasemapLayer("arcgis/imagery", {
-    apiKey
-});
 
 ////////////////////////////// Dropdown List ////////////////////////////////////////////
 
